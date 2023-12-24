@@ -5,11 +5,13 @@ const mongoose  = require("mongoose");
 const dataSchema = new mongoose.Schema({
     productID:{
         type : mongoose.Schema.Types.ObjectId,
-        required : true
+        required : true,
+        unique : true
     },
     userID : {
         type : mongoose.Schema.Types.ObjectId,
-        required : true
+        required : true,
+        unique : true
     },
     color : {
         type:String,

@@ -4,11 +4,13 @@ const  mongoose  = require("mongoose");
 const dataSchema = new mongoose.Schema({
     categoryName : {
         type : String,
-        required : true
+        required : true,
+        unique : true
     },
     categoryImg :{
         type : String,
-        required : true
+        required : true,
+        unique : true
     }
 },{timestamps:true,versionKey:false})
 
